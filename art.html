@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<title>Wings Academy</title>
+    
+<style>
+        
+body {
+
+font-family: Arial;
+            
+margin: 0;
+            
+background-color: lightblue;
+        
+}
+
+   
+.center-img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+header {
+            
+background-color:lightblue;
+            
+color: black;
+            
+padding: 15px;
+            
+text-align: center;
+text-shadow:5px 5px 7px violet;
+        
+}
+
+        
+nav {
+            
+background-color: lightblue;
+            
+padding: 10px;
+            
+text-align: center;
+        
+}
+
+        
+nav button {
+            
+background-color: white;
+            
+border: none;
+            
+padding: 10px 20px;
+            
+margin: 5px;
+            
+cursor: pointer;
+            
+border-radius: 5px;
+        
+}
+
+        
+nav button:hover {
+            
+background-color: #1abc9c;
+            
+color: white;
+        
+}
+
+.content {
+  
+padding: 20px;
+            
+display: none;
+
+}
+
+.right-img{
+float:right;
+}
+.img{
+width:350px;
+margin:10px;
+border-radius:10px;
+}
+
+        
+video {
+            
+width: 400px;
+            
+margin-top: 10px;
+        
+}
+
+        
+form{
+
+background-color:lightblue;
+
+width:400px;
+
+padding:20px;
+
+margin:left;
+
+border-radius:10px;
+
+}
+
+input, textarea,select{
+
+width:90%;
+
+padding:5px;
+
+margin:5px;
+
+}
+</style>
+
+    
+<script>
+        
+function showSection(sectionId) {
+            
+let sections = document.getElementsByClassName("content");
+            
+for (let i = 0; i < sections.length; i++) {
+                
+sections[i].style.display = "none";
+           
+ }
+            
+document.getElementById(sectionId).style.display = "block";
+        
+}
+    
+</script>
+
+</head>
+
+
+<body>
+
+
+<img src="D:\NEW\logo.png" width="300" height="200" class="center-img">
+<header>
+    
+<h1>Wings Academy</h1>
+ 
+<nav>
+    
+<button onclick="showSection('about')">About</button>
+<button onclick="showSection('courses')">Courses</button>
+    
+<button onclick="showSection('gallery')">Gallery</button>
+    
+<button onclick="showSection('contact')">Contact</button>
+
+<button onclick="showSection('form')">Form</button>
+
+</nav>
+
+<p>Welcome to Wings Academy</p>
+
+<p> Wings Academy is a leading institution dedicated to providing quality education and empowering students with
+knowledge, skills and values. We aim to create future leaders who are innovative,responsible, and successful in
+the careers.  </p>
+</header>
+
+
+
+<!-- ABOUT -->
+
+<div id="about" class="content">
+
+<h2>About College</h2>
+     
+<img src="D:\NEW\about.png" height="300" width="250" class="right-img" >
+ <p><b>Wings Academy is one of the best institutions providing quality education.</b></p>
+<p><b>Wings academy provides a modern learning environment with well equipped classrooms,advanced laboratories, a digital library, and excellent campus facilities.</b></p>
+<p><b>The college regularly organizes seminars, workshops,cultural events and placement training program to enhance the student skill and prepare them for successfull careers.</b></p>
+<p><b>At Wings Academy,we strive to create responsible citizens and future leaders who contribute positively to society.</b></p>
+
+</div>
+
+
+<!-- COURSES -->
+
+<div id="courses" class="content">
+    
+<h2>Courses Offered</h2>
+    
+<h2>Engineering Courses</h2>
+
+<div class="container">
+
+
+<div class="card">
+    <h3>CSE</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 1,00,000</p>
+    </div>
+
+<div class="right-img" >
+<img src="D:\NEW\College\course.jpg" width="650" height="800">
+</div>
+<div class="card">
+    <h3>IT</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 90,000</p>
+  
+</div>
+
+
+<div class="card">
+    <h3>AI & ML</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 1,20,000</p>
+ 
+</div>
+
+
+<div class="card">
+    <h3>Mechanical</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 90,000</p>
+
+</div>
+
+
+<div class="card">
+    <h3>Civil</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 80,000</p>
+  
+</div>
+
+
+<div class="card">
+    <h3>ECE</h3>
+    <p>Duration: 4 Years</p>
+    <p>Fees: 95,000</p>
+  
+
+</div>
+</div>
+<h2>PG & Management Courses</h2>
+
+<div class="container">
+
+
+<div class="card">
+    <h3>MBA</h3>
+    <p>Duration: 2 Years</p>
+    <p>Fees: 1,50,000</p> 
+</div>
+
+
+<div class="card">
+    <h3>MCA</h3>
+    <p>Duration: 2 Years</p>
+    <p>Fees: 1,20,000</p>
+ 
+</div>
+
+
+<div class="card">
+    <h3>M.Tech CSE</h3>
+    <p>Duration: 2 Years</p>
+    <p>Fees: 1,00,000</p>
+ 
+</div>
+
+
+<div class="card">
+    <h3>BBA</h3>
+    <p>Duration: 3 Years</p>
+    <p>Fees: 70,000</p>
+  
+</div>
+
+
+<div class="card">
+    <h3>BCA</h3>
+    <p>Duration: 3 Years</p>
+    <p>Fees: 70,000</p> </div>
+
+
+</div>
+</div>
+<!-- GALLERY -->
+
+<div id="gallery" class="content">
+    
+<h2>College Gallery</h2>
+    
+<img src="D:\NEW\College\photo1.jpg" height="250" >
+    
+<img src="D:\NEW\College\photo2.jpg" height="250" width="300">
+
+    
+<img src="D:\NEW\College\photo3.jpg" height="250">
+<img src="D:\NEW\College\photo4.jpg" height="250">
+<img src="D:\NEW\College\library.jpg" height="250">
+<h3>College Video</h3>
+    
+<video controls autoplay muted loop>
+        
+<source src="D:\NEW\collegevideo2.mp4" type="video/mp4">
+    
+</video>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div id="contact" class="content">
+    
+<h2>Contact Us</h2>
+   
+<p><b>Address:</b>123,Anna salai, Chennai, Tamilnadu</p> 
+<p><b>Email:</b> wings12307college@gmail.com</p>
+    
+<p><b>Phone: </b>9876543210</p>
+ 
+<p><b>Office Hours:</b> Monday-Friday(9:00 AM to 5:00PM)</p>
+<p><b>Website:</b>
+<a href="https://www.google.com"  target="_blank">
+
+Click here to visit the college website
+</a>
+</p>
+</div>
+
+<!--FORM-->
+<div id="form" class="content">
+<form>
+<h2>Application Form</h2>
+Full Name:<br>
+<input type="text"><br>
+
+Name of parent:<br><input type="text"><br>
+
+Date of Birth:<br>
+<input type="date"><br>
+
+
+Address:<br><input type="text"><br>
+Age:<br>
+<input type="number"><br>
+
+
+Gender:<br>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female<br>
+Email:<br>
+<input type="email"><br>
+
+
+Phone Number:<br>
+<input type="tel"><br>
+
+<button type="submit">Submit</button>
+</div>
+</form>
+
+</body>
+
+</html>
